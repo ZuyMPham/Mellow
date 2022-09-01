@@ -1,5 +1,6 @@
 require("dotenv").config();
 const stripe = require('stripe')('sk_test_51LbAI2JqqrIKNMYombev4FdHrLrucQBVOnlyPzqCpQIWFyME6yfMw6acQSHpGqONnhWnt5S6c4AffjpYxiyLmQuM00MY4gtwcF');
+// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
